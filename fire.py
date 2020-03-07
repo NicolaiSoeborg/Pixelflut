@@ -3,12 +3,6 @@ from time import sleep
 from telnetlib import Telnet
 
 
-
-def random_shift(x, p):
-    """Change x by up to p percent (where 0 <= p < 1)"""
-    d = x * p
-    return x + (random() * 2 * d - d)
-
 def randcolor(a, b, chance_of_low=0):
     return hex(randint(a, b))[2:].zfill(2)
 
